@@ -17,4 +17,5 @@ A: See https://easyengine.io/tutorials/linux/increase-open-files-limit/
 
 ## Resources
 
-- (k6 docs)[https://k6.io/docs/]
+- (k6 Docs)[https://k6.io/docs/]
+- (k6 GitHub)[https://github.com/grafana/k6]
