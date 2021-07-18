@@ -13,7 +13,7 @@ sudo apt-get install k6
 ## Troubleshooting 
 
 ##### I am getting errors related to too many open files
-See https://easyengine.io/tutorials/linux/increase-open-files-limit/
+(Increase your open files limit)[https://easyengine.io/tutorials/linux/increase-open-files-limit/]
 
 ## Resources
 
