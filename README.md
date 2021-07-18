@@ -13,9 +13,9 @@ sudo apt-get install k6
 ## Troubleshooting 
 
 #### I am getting errors related to too many open files
-(Increase your open files limit)[https://easyengine.io/tutorials/linux/increase-open-files-limit/]
+[Increase your open files limit](https://easyengine.io/tutorials/linux/increase-open-files-limit/)
 
 ## Resources
 
-- (k6 Docs)[https://k6.io/docs/]
-- (k6 GitHub)[https://github.com/grafana/k6]
+- [k6 Docs](https://k6.io/docs/)
+- [k6 GitHub](https://github.com/grafana/k6)
