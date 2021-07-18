@@ -10,6 +10,8 @@ sudo apt-get update
 sudo apt-get install k6
 ```
 
+k6 is also available via Docker: `docker pull loadimpact/k6`
+
 ### Troubleshooting 
 
 #### I am getting errors related to too many open files
