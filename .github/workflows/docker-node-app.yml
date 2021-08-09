@@ -6,7 +6,7 @@ on:
       - 'master'
       - 'main'
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "10 */12 * * *"
 
 jobs:
   stress:
@@ -17,6 +17,7 @@ jobs:
       - uses: act10ns/slack@v1
         with:
           status: starting
+          
       - name: Checkout Code
         uses: actions/checkout@v1
 
