@@ -2,11 +2,14 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 
 export let options = {
-  vus: 1000,
+  vus: 10,
   duration: '60s',
+  thresholds: {
+    http_req_duration: ['p(95)<500'],
+  },
 };
 
 export default function () {
-  http.get('https://kube.fairbanks.dev');
+  http.get('https://fbnks.io/kube');
   sleep(1);
 };

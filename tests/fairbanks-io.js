@@ -2,11 +2,14 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 
 export let options = {
-  vus: 100,
+  vus: 10,
   duration: '60s',
+  thresholds: {
+    http_req_duration: ['p(95)<500'],
+  },
 };
 
 export default function () {
-  http.get('https://bsord.io');
+  http.get('https://fairbanks.io');
   sleep(1);
 };
