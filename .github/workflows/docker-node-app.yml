@@ -11,7 +11,12 @@ on:
 jobs:
   stress:
     runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
+      - uses: act10ns/slack@v1
+        with:
+          status: starting
       - name: Checkout Code
         uses: actions/checkout@v1
 
@@ -19,3 +24,9 @@ jobs:
         uses: k6io/action@v0.1
         with:
           filename: tests/docker-node-app.js
+
+      - uses: act10ns/slack@v1
+        with: 
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+        if: always()
