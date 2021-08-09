@@ -1,0 +1,21 @@
+name: Bsord.io | Stress Test
+
+on:
+  push:
+    branches:
+      - 'master'
+      - 'main'
+  schedule:
+    - cron: "5 */12 * * *"
+
+jobs:
+  stress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v1
+
+      - name: Run k6 Stress Test
+        uses: k6io/action@v0.1
+        with:
+          filename: tests/bsord-io.js
