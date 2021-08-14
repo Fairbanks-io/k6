@@ -4,7 +4,6 @@
 
 <br/>
 <img src="assets/github-hr.png" alt="---" />
-<br/>
 
 ### Setup
 
