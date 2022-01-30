@@ -3,7 +3,7 @@
 <h3 align="center">k6 load testing scripts</h3>
 
 <br/>
-<img src="assets/github-hr.png" alt="---" />
+<img src="assets/github-hr.png" alt="----" />
 
 ### Setup
 
