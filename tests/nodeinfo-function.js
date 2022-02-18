@@ -11,9 +11,6 @@ export let options = {
     { duration: '5m', target: 75 },
     { duration: '1m', target: 0 },
   ],
-  thresholds: {
-    http_req_duration: ['p(95)<500'],
-  },
 };
 
 export default function () {
