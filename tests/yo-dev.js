@@ -10,6 +10,6 @@ export let options = {
 };
 
 export default function () {
-  http.get('https://fbnks.io/kube');
+  http.get('https://fbnks.dev/health');
   sleep(1);
 };
